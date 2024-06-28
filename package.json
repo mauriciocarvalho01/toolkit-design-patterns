@@ -1,0 +1,92 @@
+{
+  "name": "clean-architecture-skeleton",
+  "version": "0.0.1",
+  "description": "Projeto Conexão Tech",
+  "license": "GPL-3.0-or-later",
+  "keywords": [
+    "clean architecture",
+    "clean code",
+    "tdd",
+    "ddd",
+    "solid",
+    "design patterns",
+    "node",
+    "typescript",
+    "jest",
+    "microservices"
+  ],
+  "author": {
+    "name": "Mauricio Carvalho Pinheiro",
+    "email": "mauricio.pinheiro@pontaltech.com.br",
+    "url": "https://anyrepo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://anyrepo/clean-architecture-skeleton.git"
+  },
+  "bugs": {
+    "url": "https://anyrepo/clean-architecture-skeleton/issues",
+    "email": "mauricio.pinheiro@pontaltech.com.br"
+  },
+  "scripts": {
+    "start": "node -r dotenv/config dist/main",
+    "dev": "ts-node-dev --respawn --transpile-only --clear -r dotenv/config --inspect=0.0.0.0:9229 src/main",
+    "copy-files": "copyfiles -u 1 src/**/*.js  dist/",
+    "clean": "rimraf dist",
+    "build": "npm run clean && tsc -p tsconfig-build.json && npm run copy-files",
+    "prepare": "husky install",
+    "check": "npm-check -s -u",
+    "lint": "eslint .",
+    "lint:fix": "npm run lint -- --fix",
+    "test": "jest --passWithNoTests --no-cache --runInBand",
+    "test:watch": "npm t -- --watchAll",
+    "test:staged": "npm t -- --findRelatedTests",
+    "test:coverage": "npm t -- --coverage",
+    "test:integration": "npm t -- --watchAll --config ./jest.integration.config.js",
+    "test:coveralls": "npm run test:coverage && coveralls < coverage/lcov.info",
+    "e2e:rabbitmq": "npm run test:integration -- ./tests/infra/gateways/rabbitmq-gateway.test.ts"
+  },
+  "dependencies": {
+    "@smithy/node-http-handler": "^2.1.4",
+    "@types/amqplib": "^0.10.1",
+    "amqplib": "^0.10.3",
+    "module-alias": "^2.2.2",
+    "moment": "^2.29.4",
+    "reflect-metadata": "^0.1.13",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.9.1",
+    "winston": "^3.13.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
+    "@types/jest": "^27.0.1",
+    "@types/module-alias": "^2.0.1",
+    "@types/node": "^16.7.13",
+    "@types/supertest": "^2.0.11",
+    "@typescript-eslint/eslint-plugin": "^4.31.0",
+    "copyfiles": "^2.4.1",
+    "coveralls": "^3.1.1",
+    "dotenv": "^10.0.0",
+    "eslint": "^7.32.0",
+    "eslint-config-standard-with-typescript": "^21.0.1",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "husky": "^7.0.2",
+    "jest": "^27.1.1",
+    "jest-mock-extended": "^2.0.1",
+    "lint-staged": "^11.1.2",
+    "mockdate": "^3.0.5",
+    "supertest": "^6.1.6",
+    "ts-jest": "^27.0.5",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.4.2"
+  },
+  "engines": {
+    "node": "latest"
+  },
+  "imports": {
+    "#config/": "./src/main/config/*.ts"
+  }
+}

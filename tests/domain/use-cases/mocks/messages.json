@@ -1,0 +1,49 @@
+[
+    {
+        "contentMessage": {
+            "text": {
+                "text": "Hello, World!"
+            }
+        }
+    },
+    {
+        "contentMessage": {
+            "carousel": {
+                "cards": [
+                    {
+                        "title": "Card 1",
+                        "description": "Description 1",
+                        "imageUrl": "image_url"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "contentMessage": {
+            "media": {
+                "url": "media_url",
+                "mediaType": "image"
+            }
+        }
+    },
+    {
+        "contentMessage": {
+            "richCard": {
+                "title": "Title",
+                "description": "Description",
+                "imageUrl": "image_url"
+            }
+        }
+    },
+    {
+        "contentMessage": {
+            "suggestion": {
+                "suggestions": [
+                    "Suggestion 1",
+                    "Suggestion 2"
+                ]
+            }
+        }
+    }
+]
