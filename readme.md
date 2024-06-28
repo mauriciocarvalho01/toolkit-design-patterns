@@ -14,18 +14,20 @@ Padrões de projeto são soluções típicas para problemas comuns em projeto de
 * Adapter (ESTRUTURAL)
 * Observer (COMPORTAMENTAL)
 
-Além da defincição conceitural, Design Patterns servem também para EVITAR/MINIMIZAR problemas recorrentes em desenvolvimento de softwares. 
+##### Além da defincição conceitural, Design Patterns servem também para EVITAR/MINIMIZAR problemas recorrentes em desenvolvimento de softwares. 
 
 
 > ## Code Smells (Anti-Patterns)
 
 Anti-patterns são soluções comuns a problemas recorrentes que, embora possam parecer apropriadas à primeira vista, acabam gerando mais problemas do que soluções. Eles são "soluções ruins" para problemas comuns.
 
-Alguns exemplos de anti-patterns incluem:
+##### Alguns exemplos de anti-patterns incluem:
 
 **Speculative Generality (Generalidade Especulativa)**
+
+* Adicionar funcionalidades ou generalizações ao código baseadas em suposições sobre necessidades futuras que podem nunca se concretizar. Isso resulta em complexidade desnecessária. 
+
 **Obs: Na minha opinião, Design patterns só deve ser aplicado quando o desenvolvedor ter a experiencia de aplicar esse princípio.**
-Adicionar funcionalidades ou generalizações ao código baseadas em suposições sobre necessidades futuras que podem nunca se concretizar. Isso resulta em complexidade desnecessária. 
 
 ##### Os principios Keep It Simple, Stupid e You Aren't Gonna Need It: 
 
