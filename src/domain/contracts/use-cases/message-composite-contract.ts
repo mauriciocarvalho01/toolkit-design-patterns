@@ -1,31 +1,31 @@
 export interface MessageCompositeContract {
-  getContentMessages(): MessageCompositeContract.GenericType;
-  resolveFee(messageType: string): number;
+  getContentMessages: () => MessageCompositeContract.GenericType
+  resolveFee: (messageType: string) => number
 }
 
 export namespace MessageCompositeContract {
   export type GenericType<T = any> = T
 
   export type TextType = {
-    text: string;
+    text: string
   }
 
   export type RichCardType = {
-    title: string;
-    description: string;
-    imageUrl: string;
+    title: string
+    description: string
+    imageUrl: string
   }
 
   export type CarouselType = {
-    cards: RichCardType[];
+    cards: RichCardType[]
   }
 
   export type SuggestionType = {
-    suggestions: string[];
+    suggestions: string[]
   }
 
   export type MediaType = {
-    url: string;
+    url: string
     mediaType: 'image' | 'video' | 'audio' | 'pdf'
   }
 
