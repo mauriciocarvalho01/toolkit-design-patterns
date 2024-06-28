@@ -7,7 +7,7 @@ export class RabbitMQGateway implements MessageBroker {
   private connection: amqp.Connection | undefined = undefined
   static instance: RabbitMQGateway | null = null
 
-   constructor() {
+   constructor () {
     if (RabbitMQGateway.instance !== null) {
       throw new Error('Use RabbitMQGateway.getInstance() instead of new')
     }
@@ -21,7 +21,7 @@ export class RabbitMQGateway implements MessageBroker {
     return RabbitMQGateway.instance
   }
 
-  helthCheck(): void {
+  helthCheck (): void {
     this.connection?.on('error', () => {
       logger.error('RabbitMQ connection error')
       process.exit(1)
@@ -36,7 +36,7 @@ export class RabbitMQGateway implements MessageBroker {
     })
   }
 
-  async connect(messageBrokerOptions: MessageBroker.MessageBrokerOptions): Promise<MessageBroker.GenericType> {
+  async connect (messageBrokerOptions: MessageBroker.MessageBrokerOptions): Promise<MessageBroker.GenericType> {
     if (this.connection !== undefined) return this.connection
     logger.info(`RabbitMQ Broker Connection is being established to ${JSON.stringify(messageBrokerOptions)}...`)
     this.connection = await amqp.connect(messageBrokerOptions.url, messageBrokerOptions.config)
@@ -45,7 +45,7 @@ export class RabbitMQGateway implements MessageBroker {
     return this.connection
   }
 
-  async getChannel(): Promise<MessageBroker.GenericType> {
+  async getChannel (): Promise<MessageBroker.GenericType> {
     if (this.connection === undefined) {
       throw new MessageBrokerError('Broker Connection has not been established!')
     }
@@ -53,7 +53,7 @@ export class RabbitMQGateway implements MessageBroker {
     return await this.connection.createChannel()
   }
 
-  async close(): Promise<void> {
+  async close (): Promise<void> {
     if (this.connection === undefined) return
     logger.info('RabbitMQ Broker connection is being closed...')
     await this.connection.close()

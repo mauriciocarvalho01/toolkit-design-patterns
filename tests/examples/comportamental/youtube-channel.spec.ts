@@ -1,11 +1,21 @@
-
-// COMPORTAMENTAL ---> Observer Pattern
-
 import { YoutubeChannel, ChannelSubscriber } from '@/examples/comportamentais/observer/youtube-channel'
 
+// COMPORTAMENTAL ---> Observer Pattern
+// Exemplos refinados Frameworks reativos ---> ngOnChanges, ngOnInit Angular
+                             // ---> useEffect, useState
+                             // ---> beforeAll, beforeEach, afterAll
+
 // Por que é bom?
+  // Permite uma relação fraca entre o sujeito e os observadores, facilitando a manutenção e a evolução do código.
+  // Novos observadores podem ser adicionados a qualquer momento sem alterar o código do sujeito.
+  // O mesmo sujeito pode ser usado com diferentes observadores para comportamentos variados.
+  // Facilita a implementação de sistemas reativos e orientados a eventos, que são comuns em muitas aplicações modernas.
 
 // Por que é ruim?
+  // Introduz complexidade adicional ao código, especialmente em sistemas com muitos observadores.
+  // Pode ser difícil depurar e rastrear problemas em sistemas com muitos observadores e notificações frequentes.
+  // Pode afetar o desempenho se não for implementado corretamente, especialmente com um grande número de observadores.
+  // Pode levar a dependências circulares se os observadores também estiverem observando uns aos outros.
 
 jest.setTimeout(200000)
 
@@ -45,7 +55,7 @@ describe('Youtube Channel', () => {
 
         // When: Ação que está sendo testada
         youtubeChannel
-        .notifySubscribers('[Canal JavaScripto BR] Adicionou um novo video! [Por que 3 > 10 em javascript!]')
+        .notifySubscribers('[Canal JavaScripto BR] Adicionou um novo video! [Por que 3 > 10 em javascript?]')
         const newSubscribers = youtubeChannel.getSubscribers()
 
         // Then: Resultado esperado
@@ -54,7 +64,7 @@ describe('Youtube Channel', () => {
         })
     })
 
-    it('Garantir que os inscritos cancelem a inscrição no canal', async () => {
+    it('Garantir que youtubeChannel observe os inscritos', async () => {
         // Given: Contexto inicial ou pré-condições
         // Não há necessidade de configurar pré-condições específicas neste caso.
 
@@ -62,17 +72,9 @@ describe('Youtube Channel', () => {
         youtubeChannel
         .notifySubscribers('[Canal JavaScripto BR] Adicionou um novo video! [Como fazer ma##nha usando maizena y javascript]')
         await new Promise(resolve => setTimeout(resolve, 10000))
-        const subscribers = youtubeChannel.getSubscribers()
 
         // Then: Resultado esperado
-        subscribers.forEach((subscriber, subscriberId) => {
-            if (subscriberId % 2 === 0) {
-                subscriber.observeSubscriberActions()
-                if (subscriber.isSubscribed()) {
-                    youtubeChannel.removeSubscriber(subscriber)
-                }
-            }
-        })
+        youtubeChannel.observeSubscriberActions()
 
         const countSubscribers = youtubeChannel.countSubscribers({ formated: true })
 

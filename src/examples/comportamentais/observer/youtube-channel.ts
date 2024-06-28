@@ -9,16 +9,16 @@ export interface Channel {
   notifySubscribers: (message: string) => void
   countSubscribers: (options: Channel.CountSubscriberOptions) => Channel.CountSubscriberResult
   getSubscribers: () => Subscriber[]
+  observeSubscriberActions: () => void
 }
 
 export interface Subscriber {
+  getName: () => string
   receivedNotification: (message: string) => void
   hasBeenNotified: () => boolean
   subscribe: () => void
   unsubscribe: () => void
   isSubscribed: () => boolean
-  observeSubscriberActions: () => void
-
 }
 
 export class YoutubeChannel implements Channel {
@@ -61,6 +61,18 @@ export class YoutubeChannel implements Channel {
         return formattedNumber
     }
 
+    observeSubscriberActions (): void {
+      this.subscribers.forEach((subscriber, subscriberId) => {
+        console.log(`[YoutubeChannel] Observando ações do inscrito do [${subscriber.getName()}]`)
+        if (subscriberId % 2 === 0) {
+            subscriber.unsubscribe()
+            if (!subscriber.isSubscribed()) {
+                this.removeSubscriber(subscriber)
+            }
+        }
+      })
+    }
+
     getSubscribers (): Subscriber[] {
         return this.subscribers
     }
@@ -75,10 +87,7 @@ export class ChannelSubscriber implements Subscriber {
         this.name = name
     }
 
-    observeSubscriberActions (): void {
-        console.log(`[${this.name}] Observando ações do inscrito.`)
-        this.unsubscribe()
-    }
+    getName (): string { return this.name }
 
     subscribe (): void {
         this.notified = false
@@ -92,7 +101,7 @@ export class ChannelSubscriber implements Subscriber {
 
     unsubscribe (): void {
         this.notified = false
-        const comments = ['Acho engraçado que...[textão do twitter]', 'Muito ruim desavisado', 'Nada bom aconteceu', 'Esperava mais ... [textão do twitter]', 'Ficou um pouco chato', 'Quase não aconteceu']
+        const comments = ['Muito bom, lembro uma vez que...[textão do twitter]', 'Legal', 'first', 'Esperava mais ... [textão do twitter]', 'Ficou um pouco chato', 'Quase não aconteceu']
         if (Math.ceil((Math.random() * 10)) % 2 === 0) {
             console.log(`[${this.name}] Comentário: ${comments[Math.floor(Math.random() * comments.length)]}`)
             this.subscribed = false
