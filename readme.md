@@ -167,7 +167,7 @@ Quando uma classe conhece detalhes internos de outra classe e depende fortemente
 
 FONTES: 
 
-[Design Patterns](https://refactoring.guru/pt-br/design-patterns)
-[Code Smells](https://refactoring.guru/pt-br/refactoring/smells)
+ - [Design Patterns](https://refactoring.guru/pt-br/design-patterns)
+ - [Code Smells](https://refactoring.guru/pt-br/refactoring/smells)
 
 
