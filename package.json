@@ -1,5 +1,5 @@
 {
-  "name": "clean-architecture-skeleton",
+  "name": "toolkit-design-patterns",
   "version": "0.0.1",
   "description": "Projeto Conexão Tech",
   "license": "GPL-3.0-or-later",
@@ -22,10 +22,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://anyrepo/clean-architecture-skeleton.git"
+    "url": "git@github.com:mauriciocarvalho01/toolkit-design-patterns.git"
   },
   "bugs": {
-    "url": "https://anyrepo/clean-architecture-skeleton/issues",
+    "url": "https://github.com/mauriciocarvalho01/toolkit-design-patterns/issues",
     "email": "mauricio.pinheiro@pontaltech.com.br"
   },
   "scripts": {

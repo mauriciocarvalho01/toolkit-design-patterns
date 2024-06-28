@@ -7,11 +7,11 @@
 Padrões de projeto são soluções típicas para problemas comuns em projeto de software. Eles são como plantas de obra pré fabricadas que você pode customizar para resolver um problema de projeto recorrente em seu código.
 
 > [!NOTE]
-> Obs: Na minha opinião, Design Patterns só devem ser aplicados quando o desenvolvedor tem a experiência necessária para entender quando e como aplicá-los, garantindo que tragam mais benefícios do que complexidade desnecessária. É importante lembrar que Design Patterns não devem ser automaticamente associados à complexidade; na verdade, eles fazem exatamente o contrário, quando bem aplicados, simplificam a solução de problemas recorrentes e melhoram a manutenção e a clareza do código. 
+> Obs: Na minha opinião, Design Patterns só devem ser aplicados quando o desenvolvedor tem a experiência necessária para entender quando e como aplicá-los, garantindo que tragam mais benefícios do que complexidade desnecessária. É importante lembrar que Design Patterns não devem ser automaticamente associados à complexidade; na verdade, eles fazem exatamente o contrário, quando são bem aplicados, simplificam a solução de problemas recorrentes e melhoram a manutenção e a clareza do código.
 
 
 #### Exemplos disponiveis:
-* Singleton (CRIACIONAL) 
+* Singleton (CRIACIONAL)
 * Builder (CRIACIONAL)
 * Decorator (CRIACIONAL)
 * Factory Method (CRIACIONAL)
@@ -20,7 +20,7 @@ Padrões de projeto são soluções típicas para problemas comuns em projeto de
 * Observer (COMPORTAMENTAL)
 
 > [!IMPORTANT]
-> Além da defincição conceitural, Design Patterns servem também para EVITAR/MINIMIZAR problemas recorrentes em desenvolvimento de softwares *(Ex: Code Smells)*. 
+> Além da defincição conceitural, Design Patterns servem também para EVITAR/MINIMIZAR problemas recorrentes em desenvolvimento de softwares *(Ex: Code Smells)*.
 
 
 
@@ -159,13 +159,13 @@ Quando uma classe conhece detalhes internos de outra classe e depende fortemente
 
 
 
-## Prompt CHAT-GPT auxiliar na coesão e evitar code smells: 
+## Prompt CHAT-GPT auxiliar na coesão e evitar code smells:
 
 > Analise o método e/ou conjunto de métodos/classe [nome do método/nome da classe] em relação aos princípios SOLID, design patterns e possíveis code smells.
 
 
 
-FONTES: 
+FONTES:
 
  - [Design Patterns](https://refactoring.guru/pt-br/design-patterns)
  - [Code Smells](https://refactoring.guru/pt-br/refactoring/smells)
