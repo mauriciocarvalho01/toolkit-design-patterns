@@ -158,8 +158,6 @@ Quando uma classe conhece detalhes internos de outra classe e depende fortemente
 
 
 
-## Prompt CHAT-GPT auxiliar em evitar code smells: 
+## Prompt CHAT-GPT auxiliar na coesão e evitar code smells: 
 
-> Analise o método [nome do método] em relação aos princípios SOLID, design patterns e possíveis code smells.
-
-> Analise a classe  [nome da classe] em relação aos princípios SOLID, design patterns e possíveis code smells.
+> Analise o método e/ou conjunto de métodos/classe [nome do método/nome da classe] em relação aos princípios SOLID, design patterns e possíveis code smells.
