@@ -164,8 +164,10 @@ Quando uma classe conhece detalhes internos de outra classe e depende fortemente
 > Analise o método e/ou conjunto de métodos/classe [nome do método/nome da classe] em relação aos princípios SOLID, design patterns e possíveis code smells.
 
 
+
 FONTES: 
-[Design Patterns][Refactoring Guru](https://refactoring.guru/pt-br/design-patterns)
-[Code Smells][Refactoring Guru](https://refactoring.guru/pt-br/refactoring/smells)
+
+[Design Patterns](https://refactoring.guru/pt-br/design-patterns)
+[Code Smells](https://refactoring.guru/pt-br/refactoring/smells)
 
 
