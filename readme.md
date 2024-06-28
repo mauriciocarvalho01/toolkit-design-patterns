@@ -91,55 +91,65 @@ Comments (Muitos comentários)
 ##### Inappropriate Intimacy (Intimidade Inapropriada)
 
 Quando uma classe conhece detalhes internos de outra classe e depende fortemente deles, isso cria uma forte acoplagem entre as classes, dificultando a manutenção e evolução do código. Deve-se buscar uma separação mais clara entre as responsabilidades das classes.
-Melhorado por: Mediator Pattern
+> [!TIP]
+> Melhorado por: Mediator Pattern
+
 
 
 ##### Feature Envy (Inveja de Funcionalidade)
 
 * Quando um método de uma classe parece estar mais interessado nos dados de outra classe, isso indica que o método poderia estar na outra classe. Isso geralmente sugere que a funcionalidade deveria ser movida para a classe que detém os dados relevantes.
-Melhorado por: Visitor Pattern
+> [!TIP]
+> Melhorado por: Visitor Pattern
 
 
 ##### Large Class (Classe Grande)
 
 * Classes que fazem muitas coisas diferentes violam o Princípio da Responsabilidade Única (SOLID). Essas classes devem ser divididas em várias classes menores, cada uma com uma responsabilidade clara e específica, facilitando a manutenção e a compreensão do código.
-Melhorado por: Facade Pattern
+> [!TIP]
+> Melhorado por: Facade Pattern
 
 
 ##### Long Method (Método Longo)
 
 * Métodos muito longos podem ser difíceis de entender e manter. Refatorar métodos longos em métodos menores e mais coesos melhora a legibilidade e facilita a reutilização de partes do código.
-Melhorado por: Command Pattern
+> [!TIP]
+> Melhorado por: Command Pattern
 
 
 ##### Long Parameter List (Lista Longa de Parâmetros)
 
 * Métodos que requerem muitos parâmetros podem ser difíceis de usar e entender. Reduzir o número de parâmetros pode ser feito através da criação de objetos que encapsulam os dados necessários ou usando padrões como o Builder.
-Melhorado por: Builder Pattern
+> [!TIP]
+> Melhorado por: Builder Pattern
 
 
 ##### Middle Man
 
 * Quando uma classe delega a maior parte de seu trabalho para outra classe, ela pode estar atuando como um intermediário desnecessário. Esse intermediário pode ser eliminado, permitindo que as classes se comuniquem diretamente.
-Melhorado por: Facade Pattern
+> [!TIP]
+> Melhorado por: Facade Pattern
 
 
 ##### Primitive Obsession (Obsessão por Tipos Primitivos)
 
 * Uso excessivo de tipos primitivos em vez de criar classes que encapsulem conceitos mais ricos. Por exemplo, usar int/string para representar um número de telefone em vez de criar uma classe PhoneNumber que possa ter validação e outros comportamentos específicos.
-Melhorado por: Value Object Pattern
+> [!TIP]
+> Melhorado por: Value Object Pattern
 
 
 ##### Refused Bequest (Herança Recusada)
 
 * Quando uma subclasse herda métodos e dados de uma superclasse, mas não os utiliza ou os sobrecarrega inadequadamente, isso indica que a herança não foi bem aplicada. Isso pode sugerir que a hierarquia de classes precisa ser repensada.
-Melhorado por: Strategy Pattern
+> [!TIP]
+> Melhorado por: Strategy Pattern
 
 
 ##### Shotgun Surgery (Cirurgia de Espingarda)
 
 * Quando uma pequena mudança em um sistema requer modificações em muitos lugares diferentes, isso sugere que o código está mal organizado. Deve-se buscar uma maior coesão, de modo que mudanças sejam localizadas e tenham um impacto mínimo no resto do sistema.
-Melhorado por: Observer Pattern
+> [!TIP]
+> Melhorado por: Observer Pattern
 
 
 
