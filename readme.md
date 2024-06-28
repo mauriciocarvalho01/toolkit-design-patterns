@@ -14,7 +14,7 @@ Padrões de projeto são soluções típicas para problemas comuns em projeto de
 * Adapter (ESTRUTURAL)
 * Observer (COMPORTAMENTAL)
 
-##### Além da defincição conceitural, Design Patterns servem também para EVITAR/MINIMIZAR problemas recorrentes em desenvolvimento de softwares. 
+##### Além da defincição conceitural, Design Patterns servem também para EVITAR/MINIMIZAR problemas recorrentes em desenvolvimento de softwares *(Ex: Code Smells)*. 
 
 
 
