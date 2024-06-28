@@ -21,14 +21,15 @@ Padrões de projeto são soluções típicas para problemas comuns em projeto de
 ##  Code Smells (Anti-Patterns)
 * Anti-patterns são soluções comuns a problemas recorrentes que, embora possam parecer apropriadas à primeira vista, acabam gerando mais problemas do que soluções. Eles são "soluções ruins" para problemas comuns.
 
-#### Alguns exemplos de anti-patterns incluem:
+
+> [!NOTE]
+> Obs: Na minha opinião, Design Patterns só devem ser aplicados quando o desenvolvedor tem a experiência necessária para entender quando e como aplicá-los, garantindo que tragam mais benefícios do que complexidade desnecessária. É importante lembrar que Design Patterns não devem ser automaticamente associados à complexidade; na verdade, eles fazem exatamente o contrário, quando bem aplicados, simplificam a solução de problemas recorrentes e melhoram a manutenibilidade e a clareza do código. 
+
+#### Alguns exemplos de anti-patterns que pode ser causados por Design Patterns incluem:
+
 **Speculative Generality (Generalidade Especulativa)**
 
 * Adicionar funcionalidades ou generalizações ao código baseadas em suposições sobre necessidades futuras que podem nunca se concretizar. Isso resulta em complexidade desnecessária.
-
-> [!NOTE]
-> Na minha opinião, Design patterns só deve ser aplicado quando o desenvolvedor ter a experiência de aplicar esse princípio.
-
 
 * Os princípios Keep It Simple, Stupid e You Aren't Gonna Need It:
 O princípio "Keep It Simple, Stupid" (KISS), traduzido para "Mantenha Simples, Estúpido", é uma diretriz de design que enfatiza a simplicidade e a clareza no desenvolvimento de software e outras áreas de engenharia. O princípio KISS sugere que a maioria dos sistemas funcionam melhor quando são mantidos simples e livres de complexidades desnecessárias.
@@ -40,15 +41,12 @@ O princípio "Keep It Simple, Stupid" (KISS), traduzido para "Mantenha Simples, 
 * Um objeto que sabe demais ou faz demais, centralizando muitas funcionalidades e responsabilidades.
 
 
-##### Spaghetti Code (Código Espaguete) //Babel Compile
-
-* Código desorganizado e sem estrutura, onde o fluxo do programa é difícil de seguir.
-
-
 ##### Golden Hammer (Martelo de Ouro)
 
 * Tendência a usar uma solução familiar para todos os problemas, independentemente de ser a melhor abordagem.
-Magic Numbers (Números Mágicos)
+
+
+##### Magic Numbers (Números Mágicos)
 
 * Uso de números sem explicação ou contexto no código, em vez de usar constantes nomeadas que expliquem seu significado.
 Singleton (uso excessivo ou inadequado)
@@ -62,7 +60,15 @@ Comments (Muitos comentários)
 
 * Comentários são úteis para explicar partes complexas do código, mas excesso de comentários ou comentários desnecessários podem indicar que o código não é claro por si só. Idealmente, o código deve ser autoexplicativo e os comentários devem ser usados para explicar o "porquê" e não o "como".
 
-#### Code Smells que podem ser evitando usando padrões
+
+#### Code Smells que podem ser evitados quando usamos padrões
+
+
+##### Spaghetti Code (Código Espaguete) //Babel Compile
+
+* Código desorganizado e sem estrutura, onde o fluxo do programa é difícil de seguir.
+> [!TIP]
+> Melhorado por: Todos Padrões
 
 ##### Data Clumps (Agrupamento de dados)
 
