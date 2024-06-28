@@ -33,8 +33,9 @@ Padrões de projeto são soluções típicas para problemas comuns em projeto de
 
 * Adicionar funcionalidades ou generalizações ao código baseadas em suposições sobre necessidades futuras que podem nunca se concretizar. Isso resulta em complexidade desnecessária.
 
-* Os princípios Keep It Simple, Stupid e You Aren't Gonna Need It:
-O princípio "Keep It Simple, Stupid" (KISS), traduzido para "Mantenha Simples, Estúpido", é uma diretriz de design que enfatiza a simplicidade e a clareza no desenvolvimento de software e outras áreas de engenharia. O princípio KISS sugere que a maioria dos sistemas funcionam melhor quando são mantidos simples e livres de complexidades desnecessárias.
+#### Os princípios Keep It Simple, Stupid e You Aren't Gonna Need It:
+
+* O princípio "Keep It Simple, Stupid" (KISS), traduzido para "Mantenha Simples, Estúpido", é uma diretriz de design que enfatiza a simplicidade e a clareza no desenvolvimento de software e outras áreas de engenharia. O princípio KISS sugere que a maioria dos sistemas funcionam melhor quando são mantidos simples e livres de complexidades desnecessárias.
 
 * O princípio (You Aren't Gonna Need It) (YAGNI), traduzido para "Você Não Vai Precisar Disso", é um conceito fundamental no desenvolvimento de software que prega a simplicidade e a eliminação de funcionalidades desnecessárias. O YAGNI é um dos pilares das metodologias ágeis, como o Extreme Programming (XP) - Complementar ao Scrum.
 
