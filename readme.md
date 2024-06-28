@@ -152,7 +152,8 @@ Quando uma classe conhece detalhes internos de outra classe e depende fortemente
 ##### Shotgun Surgery (Cirurgia de Espingarda)
 
 * Quando uma pequena mudança em um sistema requer modificações em muitos lugares diferentes, isso sugere que o código está mal organizado. Deve-se buscar uma maior coesão, de modo que mudanças sejam localizadas e tenham um impacto mínimo no resto do sistema.
-> [!TIP] Melhorado por: Observer Pattern
+> [!TIP]
+> Melhorado por: Observer Pattern
 
 
 
