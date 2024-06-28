@@ -64,7 +64,9 @@ Melhorado por: Builder Pattern
 Divergent Change (Mudança Divergente)
 
 Quando uma classe precisa ser modificada por diferentes razões, isso indica que ela tem múltiplas responsabilidades. Isso quebra o Princípio da Responsabilidade Única e sugere que a classe deve ser dividida em várias classes menores, cada uma com uma responsabilidade específica.
-Melhorado por: Command Pattern
+> [!TIP]
+> Melhorado por: Command Pattern
+
 Duplicate Code (Código Duplicado)
 
 Código duplicado é quando trechos idênticos de código aparecem em diferentes partes do programa. Isso torna a manutenção difícil, pois qualquer mudança precisa ser replicada em várias partes. Refatorar para evitar duplicação melhora a reutilização e a manutenção.
