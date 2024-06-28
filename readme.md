@@ -16,6 +16,7 @@ Padrões de projeto são soluções típicas para problemas comuns em projeto de
 * Decorator (CRIACIONAL)
 * Factory Method (CRIACIONAL)
 * Adapter (ESTRUTURAL)
+* Composite (ESTRUTURAL)
 * Observer (COMPORTAMENTAL)
 
 > [!IMPORTANT]
