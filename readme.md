@@ -23,14 +23,31 @@ Padrões de projeto são soluções típicas para problemas comuns em projeto de
 > Além da defincição conceitural, Design Patterns servem também para EVITAR/MINIMIZAR problemas recorrentes em desenvolvimento de softwares *(Ex: Code Smells)*.
 
 
-
 ##  Code Smells (Anti-Patterns)
 * Anti-patterns são soluções comuns a problemas recorrentes que, embora possam parecer apropriadas à primeira vista, acabam gerando mais problemas do que soluções. Eles são "soluções ruins" para problemas comuns.
 
 
-#### Alguns exemplos de anti-patterns que pode ser causados por Design Patterns incluem:
+### Magic Numbers (Números Mágicos)
 
-**Speculative Generality (Generalidade Especulativa)**
+* Uso de números sem explicação ou contexto no código, em vez de usar constantes nomeadas que expliquem seu significado.
+Singleton (uso excessivo ou inadequado)
+
+* Embora o Singleton seja um padrão de design, seu uso inadequado pode levar a problemas como dificuldade de teste e alta acoplagem.
+Code Smells que Design Patterns Podem Melhorar
+
+
+### Blank Lines (Linhas em branco)
+
+* Uso inadequado ou excessivo de linhas em branco no código pode torná-lo difícil de ler. Embora linhas em branco possam melhorar a legibilidade ao separar blocos lógicos de código, usá-las de forma inconsistente pode causar confusão.
+
+### Comments (Muitos comentários)
+
+* Comentários são úteis para explicar partes complexas do código, mas excesso de comentários ou comentários desnecessários podem indicar que o código não é claro por si só. Idealmente, o código deve ser autoexplicativo e os comentários devem ser usados para explicar o "porquê" e não o "como".
+
+
+## Alguns exemplos de anti-patterns que pode ser causados por Design Patterns incluem:
+
+### Speculative Generality (Generalidade Especulativa)
 
 * Adicionar funcionalidades ou generalizações ao código baseadas em suposições sobre necessidades futuras que podem nunca se concretizar. Isso resulta em complexidade desnecessária.
 
@@ -48,21 +65,6 @@ Padrões de projeto são soluções típicas para problemas comuns em projeto de
 ### Golden Hammer (Martelo de Ouro)
 
 * Tendência a usar uma solução familiar para todos os problemas, independentemente de ser a melhor abordagem.
-
-
-### Magic Numbers (Números Mágicos)
-
-* Uso de números sem explicação ou contexto no código, em vez de usar constantes nomeadas que expliquem seu significado.
-Singleton (uso excessivo ou inadequado)
-
-* Embora o Singleton seja um padrão de design, seu uso inadequado pode levar a problemas como dificuldade de teste e alta acoplagem.
-Code Smells que Design Patterns Podem Melhorar
-Blank Lines (Linhas em branco)
-
-* Uso inadequado ou excessivo de linhas em branco no código pode torná-lo difícil de ler. Embora linhas em branco possam melhorar a legibilidade ao separar blocos lógicos de código, usá-las de forma inconsistente pode causar confusão.
-Comments (Muitos comentários)
-
-* Comentários são úteis para explicar partes complexas do código, mas excesso de comentários ou comentários desnecessários podem indicar que o código não é claro por si só. Idealmente, o código deve ser autoexplicativo e os comentários devem ser usados para explicar o "porquê" e não o "como".
 
 
 #### Code Smells que podem ser evitados quando usamos padrões

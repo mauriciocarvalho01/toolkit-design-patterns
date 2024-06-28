@@ -22,12 +22,14 @@ describe('Youtube Channel', () => {
     })
 
     it('Garantir a criação de novos inscritos no canal', async () => {
+        // const filas = ['fila1', 'fila2']
+
         for (let subscriber = 0; subscriber < 10000; subscriber++) {
             // Given: Contexto inicial ou pré-condições
             const newSubscriber = new ChannelSubscriber(`Inscrito ${subscriber}`)
 
             // When: Ação que está sendo testada
-      youtubeChannel.addSubscriber(newSubscriber)
+            youtubeChannel.addSubscriber(newSubscriber)
         }
         const countSubscribers = youtubeChannel.countSubscribers({ formated: true })
 
@@ -76,6 +78,6 @@ describe('Youtube Channel', () => {
 
         // console.log(youtubeChannel)
         // Then: Resultado esperado
-        expect(countSubscribers).toBe('5K')
+        expect(countSubscribers).toBe('7.5K')
     })
 })

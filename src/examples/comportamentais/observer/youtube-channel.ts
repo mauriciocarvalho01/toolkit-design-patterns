@@ -95,8 +95,8 @@ export class ChannelSubscriber implements Subscriber {
         const comments = ['Acho engraçado que...[textão do twitter]', 'Muito ruim desavisado', 'Nada bom aconteceu', 'Esperava mais ... [textão do twitter]', 'Ficou um pouco chato', 'Quase não aconteceu']
         if (Math.ceil((Math.random() * 10)) % 2 === 0) {
             console.log(`[${this.name}] Comentário: ${comments[Math.floor(Math.random() * comments.length)]}`)
+            this.subscribed = false
         }
-        this.subscribed = false
     }
 
     receivedNotification (message: string): void {
