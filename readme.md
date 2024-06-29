@@ -35,10 +35,14 @@ Padrões de projeto são soluções típicas para problemas comuns em projeto de
 ### Magic Numbers (Números Mágicos)
 
 * Uso de números sem explicação ou contexto no código, em vez de usar constantes nomeadas que expliquem seu significado.
-Singleton (uso excessivo ou inadequado)
+
+
+### Singleton (uso excessivo ou inadequado)
 
 * Embora o Singleton seja um padrão de design, seu uso inadequado pode levar a problemas como dificuldade de teste e alta acoplagem.
-Code Smells que Design Patterns Podem Melhorar
+
+
+## Code Smells que Design Patterns Podem Melhorar
 
 
 ### Blank Lines (Linhas em branco)

@@ -135,3 +135,4 @@ describe('MessageBuilder', () => {
     expect(countContentMessages).toEqual(1)
   })
 })
+

@@ -2,6 +2,7 @@
 import { AbstractMessage } from '@/domain/use-cases'
 import { MessageCompositeContract } from '@/domain/contracts/use-cases'
 
+
 export class Text extends AbstractMessage {
     constructor (public override content: MessageCompositeContract.TextType) {
         super('text', content)

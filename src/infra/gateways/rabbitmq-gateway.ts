@@ -61,3 +61,14 @@ export class RabbitMQGateway implements MessageBroker {
     logger.info('RabbitMQ Broker connection has been closed!')
   }
 }
+
+// class Singleton {
+//   constructor(){}
+//   anyMethod(): void {
+//       console.log("anyMethod")
+//   }
+// }
+
+// const singleton = new Singleton()
+
+// export default singleton
