@@ -72,7 +72,7 @@ Padrões de projeto são soluções típicas para problemas comuns em projeto de
 * Tendência a usar uma solução familiar para todos os problemas, independentemente de ser a melhor abordagem.
 
 
-#### Code Smells que podem ser evitados quando usamos padrões
+# Code Smells que podem ser evitados quando usamos padrões
 
 
 ### Spaghetti Code (Código Espaguete) //Babel Compile
