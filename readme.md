@@ -37,14 +37,6 @@ Padrões de projeto são soluções típicas para problemas comuns em projeto de
 * Uso de números sem explicação ou contexto no código, em vez de usar constantes nomeadas que expliquem seu significado.
 
 
-### Singleton (uso excessivo ou inadequado)
-
-* Embora o Singleton seja um padrão de design, seu uso inadequado pode levar a problemas como dificuldade de teste e alta acoplagem.
-
-
-## Code Smells que Design Patterns Podem Melhorar
-
-
 ### Blank Lines (Linhas em branco)
 
 * Uso inadequado ou excessivo de linhas em branco no código pode torná-lo difícil de ler. Embora linhas em branco possam melhorar a legibilidade ao separar blocos lógicos de código, usá-las de forma inconsistente pode causar confusão.
@@ -55,6 +47,10 @@ Padrões de projeto são soluções típicas para problemas comuns em projeto de
 
 
 ## Alguns exemplos de anti-patterns que pode ser causados por Design Patterns incluem:
+
+### Singleton (uso excessivo ou inadequado)
+
+* Embora o Singleton seja um padrão de design, seu uso inadequado pode levar a problemas como dificuldade de teste e alta acoplagem.
 
 ### Speculative Generality (Generalidade Especulativa)
 

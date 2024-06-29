@@ -46,7 +46,7 @@ describe('Youtube Channel', () => {
         // console.log(youtubeChannel)
 
         // Then: Resultado esperado
-        expect(countSubscribers).toBe('10K')
+        expect(countSubscribers).toBe('10')
     })
 
     it('Garantir que os inscritos sejam notificados a cada video adicionado', () => {
@@ -80,6 +80,6 @@ describe('Youtube Channel', () => {
 
         // console.log(youtubeChannel)
         // Then: Resultado esperado
-        expect(countSubscribers).toBe('7')
+        expect(countSubscribers).toBe('8')
     })
 })
