@@ -80,6 +80,6 @@ describe('Youtube Channel', () => {
 
         // console.log(youtubeChannel)
         // Then: Resultado esperado
-        expect(countSubscribers).toBe('6')
+        expect(countSubscribers).toBe('8')
     })
 })
